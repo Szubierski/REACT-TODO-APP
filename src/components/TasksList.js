@@ -3,11 +3,13 @@ import Task from './Task.js';
 import './css/TasksList.css';
 
 const TasksList = (props) => {
-    const active = props.tasks.filter(task => task.active)
-    const done = props.tasks.filter(task => !task.active)
+    const active = props.tasks.filter(task => task.active);
+    const done = props.tasks.filter(task => !task.active);
+    active.sort((a, b) => b.important - a.important)
+    
+    const activeTasks = active.map(task => <Task key={task.id} edit={props.edit} task={task} delete={props.delete} change={props.change} />);
+    const doneTasks = done.map(task => <Task key={task.id} task={task} delete={props.delete} change={props.change} />);
 
-    const activeTasks = active.map(task => <Task key={task.id} edit={props.edit} task={task} delete={props.delete} change={props.change} />)
-    const doneTasks = done.map(task => <Task key={task.id} task={task} delete={props.delete} change={props.change} />)
     return (
         <main className='tasksList'>
             <section className='activeTasks'>
