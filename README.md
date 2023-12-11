@@ -1,3 +1,7 @@
+# TODO LIST
+![image](https://github.com/Szubierski/REACT-TODO-APP/assets/87711025/7e7354f4-af90-4b1a-b15b-1eb0f171f381)
+
+
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
 ## Available Scripts
@@ -69,7 +73,7 @@ This section has moved here: https://facebook.github.io/create-react-app/docs/tr
 
 ## Test data
 
-### 1. Paste this instead of state()
+### 1. Paste this instead of state = {}
 
 `state = {
   isEditing: false,
