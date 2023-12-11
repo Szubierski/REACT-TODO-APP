@@ -1,0 +1,31 @@
+.App {
+	margin: auto;
+	width: 1530px;
+	height: 850px;
+	background-color: rgb(255, 255, 255);
+	border-radius: 10px;
+	box-shadow: 8px 8px 24px -1px rgba(66, 68, 90, 1);
+}
+
+.App header {
+	padding: 30px;
+	text-shadow: 4px 4px 8px rgb(32, 32, 32);
+	text-transform: uppercase;
+	border-radius: 10px 10px 0px 0px;
+	background-color: rgba(66, 68, 90, 1);
+}
+
+.App header h1 {
+	padding: 0px;
+	margin: 0px;
+	font-size: 50px;
+	font-weight: 600;
+	text-align: center;
+	color: rgb(255, 255, 255);
+}
+
+.content {
+	height: 723px;
+	display: flex;
+	flex-direction: row;
+}

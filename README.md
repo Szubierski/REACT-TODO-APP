@@ -66,3 +66,71 @@ This section has moved here: https://facebook.github.io/create-react-app/docs/de
 ### `npm run build` fails to minify
 
 This section has moved here: https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify
+
+## Test data
+
+### 1. Paste this instead of stat()
+
+state = {
+isEditing: false,
+tasks: [
+{
+id: 1,
+text: 'Do shopping',
+date: '2023-12-12',
+important: true,
+active: true,
+},
+{
+id: 2,
+text: 'Play Witcher 3 on PC',
+date: '2023-12-12',
+important: false,
+active: false,
+},
+{
+id: 3,
+text: 'Clean flat and take out trash',
+date: '2023-12-12',
+important: true,
+active: false,
+},
+{
+id: 4,
+text: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Laudantium aspernatur eligendi et magnam iste sint eaque modi rerum. Ut maxime optio sint est neque saepe enim facere soluta omnis impedit!',
+date: '2023-12-12',
+important: false,
+active: false,
+},
+{
+id: 5,
+text: 'Do homework',
+date: '2023-12-12',
+important: false,
+active: true,
+},
+{
+id: 6,
+text: 'Do homework',
+date: '2023-12-12',
+important: false,
+active: true,
+},
+{
+id: 7,
+text: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Laudantium aspernatur eligendi et magnam iste sint eaque modi rerum. Ut maxime optio sint est neque saepe enim facere soluta omnis impedit!',
+date: '2023-12-12',
+important: false,
+active: true,
+},
+{
+id: 8,
+text: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Laudantium aspernatur eligendi et magnam iste sint eaque modi rerum. Ut maxime optio sint est neque saepe enim facere soluta omnis impedit!',
+date: '2023-12-12',
+important: false,
+active: true,
+},
+]
+}
+
+### 2. Set counter to 9

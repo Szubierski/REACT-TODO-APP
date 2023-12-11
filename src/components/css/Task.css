@@ -1,0 +1,75 @@
+.task {
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+	width: 270px;
+	border-radius: 10px;
+	background-color: rgb(237, 237, 237);
+	padding: 20px;
+	text-align: center;
+	margin: 20px;
+	box-shadow: 6px 6px 20px -1px rgba(66, 68, 90, 1);
+}
+
+.task strong {
+	flex: 2;
+}
+
+.btn {
+	height: 34px;
+	background-color: white;
+	outline: none;
+	border: none;
+	margin: 5px;
+	padding: 5px;
+	font-weight: 900;
+	border-radius: 5px;
+	cursor: pointer;
+	transition: background 0.1s ease-in-out;
+}
+
+.btn:hover {
+	background-color: rgba(66, 68, 90, 1);
+}
+
+.btn:disabled {
+	background-color: rgba(66, 68, 90, 0.3);
+	color: gray;
+	cursor: not-allowed;
+}
+
+.taskDone strong {
+	text-decoration: line-through;
+}
+
+.done {
+	color: rgb(1, 174, 1);
+}
+
+.delete {
+	color: rgb(233, 2, 2);
+}
+
+.edit {
+	color: rgb(42, 141, 255);
+	transform: translateY(-7px);
+	padding: 5px 10px;
+}
+
+.important {
+	color: rgb(211, 0, 0);
+	text-decoration: underline;
+}
+
+*::-webkit-scrollbar {
+	width: 10px;
+}
+
+*::-webkit-scrollbar-track {
+	background-color: transparent;
+}
+
+*::-webkit-scrollbar-thumb {
+	background-color: rgb(171, 171, 171);
+	border-radius: 5px;
+}
