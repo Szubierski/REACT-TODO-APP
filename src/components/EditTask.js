@@ -13,6 +13,7 @@ class EditTask extends Component {
 
     handleState = () => {
         const tasks = [...this.props.tasks];
+        // eslint-disable-next-line array-callback-return
         tasks.map(task => {
             if (this.props.id === task.id) {
                 this.setState({
